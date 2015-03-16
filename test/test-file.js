@@ -22,6 +22,7 @@ describe('File', function () {
 
     assert.equal(1, file.blocks.length);
     assert.equal('foo.css', file.blocks[0].dest);
+    console.log(file.blocks[0]);
     //assert.equal(5, file.blocks[0].raw.length);
     //assert.equal(2, file.blocks[0].src.length);
     //assert.equal('  ', file.blocks[0].indent);
