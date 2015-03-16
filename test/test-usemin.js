@@ -354,8 +354,9 @@ describe('usemin', function () {
     grunt.task.start();
 
     var changed = grunt.file.read('index.html');
+
     // Check replace has performed its duty
-    assert.equal(changed, '<link rel="stylesheet" href="styles/main.css">');
+    assert.equal(changed, ' <link rel="stylesheet" href="styles/main.css">');
   });
 });
 
