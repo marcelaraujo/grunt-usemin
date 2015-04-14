@@ -17,7 +17,7 @@ describe('File', function () {
   });
 
   it('should skip blank lines', function () {
-    var filename = __dirname + '/fixtures/block_with_empty_line.html';
+    var filename = path.join(__dirname,'/fixtures/block_with_empty_line.html');
     var file = new File(filename);
 
     assert.equal(1, file.blocks.length);
